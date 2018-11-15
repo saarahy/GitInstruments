@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Git_Instruments
+namespace MenuInstrumento
 {
-    static class Program
+    public class Program
     {
+          
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -17,6 +18,6 @@ namespace Git_Instruments
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-        }
+    }
     }
 }

@@ -46,27 +46,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cInstrumento.cs" />
+    <Compile Include="fAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAgregar.designer.cs">
+      <DependentUpon>fAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fConsultar.designer.cs">
+      <DependentUpon>fConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fConsultarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fConsultarMarca.designer.cs">
+      <DependentUpon>fConsultarMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fConsultaTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fConsultaTodos.designer.cs">
+      <DependentUpon>fConsultaTodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEliminar.designer.cs">
+      <DependentUpon>fEliminar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAgregar.resx">
+      <DependentUpon>fAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fConsultar.resx">
+      <DependentUpon>fConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fConsultarMarca.resx">
+      <DependentUpon>fConsultarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fConsultaTodos.resx">
+      <DependentUpon>fConsultaTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEliminar.resx">
+      <DependentUpon>fEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -75,6 +124,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\954780307.png" />
+    <Content Include="Resources\book-open-flat.png" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\lupa.png" />
+    <Content Include="Resources\magnifier-1093183_960_720.png" />
+    <Content Include="Resources\png-lupa-lupa-simple-256.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
