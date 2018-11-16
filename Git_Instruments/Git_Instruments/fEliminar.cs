@@ -74,5 +74,23 @@ namespace MenuInstrumento
             nueva._LI = LI;
             nueva.ShowDialog();
         }
+
+        private void txtCodigo_Enter(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text != String.Empty)
+            {
+                btnConsulta.PerformClick();
+            }
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                //aqui codigo
+                //btnConsulta.PerformClick();
+                btnBuscar.PerformClick();
+            }
+        }
     }
 }
