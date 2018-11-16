@@ -27,5 +27,17 @@ namespace Git_Instruments
             get { return material; }
             set { material = value; }
         }
+        //Metodo para almacenar utensilios
+        public void almacenarUtensilios(string pNombre, string pMarca, long pCodigoBarra,
+           double pPrecio, long pCodigo, string pClassProducto,
+          int pNumProducto, bool pCaducidad,
+          string pCategoria, double pPeso, string pMaterial)
+        {
+            almacenar(pNombre, pMarca, pCodigoBarra, pPrecio, pCodigo, pClassProducto,
+                pNumProducto, pCaducidad);
+            _categoria = pCategoria;
+            _peso = pPeso;
+            _material = pMaterial;
+        }
     }
 }

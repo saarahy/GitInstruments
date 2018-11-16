@@ -27,5 +27,17 @@ namespace Git_Instruments
             get { return tamano; }
             set { tamano = value; }
         }
+        //Declaracion del metodo almacenar
+        public void almacenarPapel(string pNombre, string pMarca, long pCodigoBarra, 
+            double pPrecio, long pCodigo,string  pClassProducto,
+           int pNumProducto, bool pCaducidad,
+           string pTipo, string pColor, string pTamano)
+        {
+            almacenar(pNombre, pMarca, pCodigoBarra, pPrecio, pCodigo, pClassProducto,
+                pNumProducto, pCaducidad);
+            _tipo = pTipo;
+            _color = pColor;
+            _tamano = pTamano;
+        }
     }
 }
