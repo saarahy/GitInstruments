@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cComputo.cs" />
     <Compile Include="cInstrumento.cs" />
+    <Compile Include="cPapeles.cs" />
+    <Compile Include="cUtensilios.cs" />
     <Compile Include="fAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +86,7 @@
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAgregar.resx">
